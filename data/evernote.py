@@ -18,10 +18,10 @@ uid=[]
 content=[]
 filename=[]
 keywords=[]
-pdf_path="pdf/"
+pdf_path="../../hrwgc-pdf/data/"
 local_pdf = []
 category = []
-post_path="$HOME/Dropbox/git/hrwgc.github.com/_posts/"
+post_path="../_posts/"
 
 cmd = "mkdir -p %s" % (pdf_path)
 print "EXEC: " + cmd
@@ -31,13 +31,12 @@ con = sqlite3.connect('evernote.sqlite')
 cur = con.cursor()
 cur.execute("DROP TABLE IF EXISTS notes")
 cur.execute("CREATE TABLE IF NOT EXISTS notes(uid TEXT PRIMARY KEY, title TEXT, created DATETIME, url TEXT, pdf_url TEXT, local_pdf TEXT, filename TEXT, category TEXT, keywords TEXT, content TEXT);")
-relpath = "working/"
+relpath = "../evernote/data/"
 allFiles = os.listdir(relpath)
 files = [x for x in allFiles if x.endswith(".html")]
 
 for notefile in files:
 	record={}
-	
 	record['filename'] = unicode(notefile.decode('ascii','ignore'))
 	record['uid'] = uuid.uuid1()
 	record['local_pdf'] = ""
@@ -127,7 +126,7 @@ for notefile in files:
 		if re.match(r'.*\.resources/.*\.pdf', record['pdf_urls']) == None:
 			try: 
 				cmd = "wget -U 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.6 Safari/537.11' -O %s %s" % (pdf_path + unicode(record['uid'])  + '-' + local_pdf + '.pdf', record['pdf_urls'])
-				#os.system(cmd)
+				os.system(cmd)
 				record['local_pdf'] = pdf_path + unicode(record['uid'])  + '-' + local_pdf + '.pdf'
 				record['category'] = "pdf"
 			except:
@@ -135,7 +134,7 @@ for notefile in files:
 		else:
 			try:
 				cmd = "mv \"%s\" \"%s\"" % (relpath + urllib.unquote(record['pdf_urls']), pdf_path + unicode(record['uid']) + '-' + local_pdf + '.pdf')
-				#os.system(cmd)
+				os.system(cmd)
 				record['local_pdf'] = pdf_path + unicode(record['uid'])  + '-' + local_pdf + '.pdf'
 				record['category'] = "pdf"
 			except:
@@ -145,26 +144,46 @@ for notefile in files:
 	
 	cur.execute('insert into notes values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',(unicode(record['uid']), record['page_title'], record['created'], record['page_url'], record['pdf_urls'], record['local_pdf'], record['filename'], record['category'], record['keywords'], record['content']))
 	con.commit()
-	post_body = """
-	---
-	layout: post
-	uid: \"%s\"
-	description: ""
-	title: \"%s\"
-	created: \"%s\"
-	source_url: \"%s\"
-	source_pdf_url: \"%s\"
-	local_pdf_url: \"%s\"
-	source_filename: \"%s\"
-	category: \"%s\"
-	tags: [ %s ]
-	---
-	{% \include JB/setup %}
-	""" % (record['uid'], record['page_title'], record['created'], record['page_url'], record['pdf_urls'], record['local_pdf'], record['filename'], record['category'], record['keywords'])
+	title = re.sub(' ', '-', re.sub(r'[^A-Za-z0-9\-]+', '-', re.sub('[A-Z]', lambda m: m.group(0).lower(), record['page_title'])))
 	if len(re.sub(r'[\-]+', r'-', re.sub(r'^(.*)\.html', r'\1', re.sub(r'^\-*([^\-].*[^\-])\-*$',r'\1', re.sub(r'[ ]+', '-', title))))) > 0:
-		jekyll = post_path + record['created'] + '-' + re.sub(r'[\-]+', r'-', re.sub(r'^(.*)\.html', r'\1', re.sub(r'^\-*([^\-].*[^\-])\-*$',r'\1', re.sub(r'[ ]+', '-', title)))) + ".md"
+		jekyll = str(post_path + re.sub(r'([0-9]{4}\-[0-9]{1,2}\-[0-9]{1,2}).*', r'\1', record['created']) + '-' + re.sub(r'[\-]+', r'-', re.sub(r'^(.*)\.html', r'\1', re.sub(r'^\-*([^\-].*[^\-])\-*$',r'\1', re.sub(r'[ ]+', '-', title)))) + ".md")
 	else: 
-		jekyll = post_path + record['uid'] + '.md'
-   	jekyll_file = open( "%s", "w") % (jekyll)
-	jekyll_file.write("%s") % (post_body)
-	jekyll_file.close()
+		jekyll = str(post_path + unicode(record['uid']) + '.md')
+	#fin
+	cmd = "echo \'---\' >> \"%s\"" % (jekyll)
+	if len(unicode(record['uid'])) > 0:
+		cmd = "echo \'uid: \"%s\"\' >> \"%s\"" % (unicode(record['uid']), jekyll)
+		os.system(cmd)
+
+	if len(record['page_title']) > 0:
+		cmd = "echo \'page_title: \"%s\"\' >> \"%s\"" % (re.sub(r'([\'\"])', r'', record['page_title']), jekyll)
+		os.system(cmd)
+
+	if len(record['created']) > 0:
+		cmd = "echo \'created: \"%s\"\' >> \"%s\"" % (record['created'], jekyll)
+		os.system(cmd)
+
+	if len(record['page_url']) > 0:
+		cmd = "echo \'page_url: \"%s\"\' >> \"%s\"" % (record['page_url'], jekyll)
+		os.system(cmd)
+
+	if len(record['pdf_urls']) > 0:
+		cmd = "echo \'pdf_urls: \"%s\"\' >> \"%s\"" % (record['pdf_urls'], jekyll)
+		os.system(cmd)
+
+	if len(record['local_pdf']) > 0:
+		cmd = "echo \'local_pdf: \"%s\"\' >> \"%s\"" % (record['local_pdf'], jekyll)
+		os.system(cmd)
+
+	if len(record['filename']) > 0:
+		cmd = "echo \'filename: \"%s\"\' >> \"%s\"" % (re.sub(r'([\'\"])', '', record['filename']), jekyll)
+		os.system(cmd)
+
+	if len(record['category']) > 0:
+		cmd = "echo \'category: \"%s\"\' >> \"%s\"" % (record['category'], jekyll)
+		os.system(cmd)
+
+	if len(record['keywords']) > 0:
+		cmd = "echo \'keywords: \"%s\"\' >> \"%s\"" % (re.sub(r'([\'\"])', '', record['keywords']), jekyll)
+		os.system(cmd)
+	cmd = "echo \'---\' >> \"%s\"" % (jekyll)
