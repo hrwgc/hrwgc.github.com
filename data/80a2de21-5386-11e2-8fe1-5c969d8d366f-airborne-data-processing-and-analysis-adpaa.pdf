@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie7 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie8 lt-ie9"> <![endif]-->
+<!--[if IE 9]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="description" content=""/>
+  <meta name="author" content=""/>
+  <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <meta name="citation_publisher" content="Springer-Verlag"/>
+  <meta name="citation_title" content="Airborne data processing and analysis software package"/>
+  <meta name="citation_firstpage" content="29"/>
+  <meta name="citation_lastpage" content="44"/>
+  <meta name="citation_doi" content="10.1007/s12145-010-0061-4"/>
+  <meta name="citation_language" content="en"/>
+  <meta name="citation_abstract_html_url" content="http://link.springer.com/article/10.1007/s12145-010-0061-4"/>
+  <meta name="citation_fulltext_html_url" content="http://link.springer.com/article/10.1007/s12145-010-0061-4/fulltext.html"/>
+  <meta name="citation_pdf_url" content="http://link.springer.com/content/pdf/10.1007%2Fs12145-010-0061-4"/>
+  <meta name="citation_author" content="David J. Delene"/>
+  <meta name="citation_author_institution" content="University of North Dakota"/>
+  <meta name="citation_author_email" content="delene@aero.und.edu"/>
+  <meta name="citation_journal_title" content="Earth Science Informatics"/>
+  <meta name="citation_journal_abbrev" content="Earth Sci Inform"/>
+  <meta name="citation_volume" content="4"/>
+  <meta name="citation_issue" content="1"/>
+  <meta name="citation_issn" content="1865-0473"/>
+  <meta name="citation_issn" content="1865-0481"/>
+  <meta name="citation_online_date" content="2010/09/08"/>
+  <meta name="citation_publication_date" content="2011/03/01"/>
+  <!--[if (gt IE 8) | (IEMobile)]><!--> <link rel="stylesheet" media="screen" href="/static/0.5898/css/modern_link.min.css"> <!--<![endif]-->
+  <!--[if (lt IE 9) & (!IEMobile)]> <link rel="stylesheet" media="screen" href="/static/0.5898/css/ielt9_link.min.css"> <![endif]-->
+  <link rel="stylesheet" media="print" href="/static/0.5898/css/print.css"/>
+  <link rel="shortcut icon" href="/static/0.5898/sites/link/images/favicon.ico"/>
+  <link rel="apple-touch-icon-precomposed" size="144x144" href="/static/0.5898/sites/link/images/apple-touch-icon-144x144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" size="114x114" href="/static/0.5898/sites/link/images/apple-touch-icon-114x114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" size="72x72" href="/static/0.5898/sites/link/images/apple-touch-icon-72x72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" size="57x57" href="/static/0.5898/sites/link/images/apple-touch-icon-57x57-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="/static/0.5898/sites/link/images/apple-touch-icon-57x57-precomposed.png"/>
+  <link rel="canonical" href="http://link.springer.com/article/10.1007%2Fs12145-010-0061-4"/>
+  <script type="text/javascript">window.jsErrors = [];window.onerror = function(errorMessage) {window.jsErrors[window.jsErrors.length] = errorMessage;}</script>
+  <script>document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/,'js');</script>
+  <title>Airborne data processing and analysis software package - Springer</title>
+</head>
+
+<body class="anonymous link" data-name="link">
+  <div id="wrapper">
+    <div id="google-analytics-account" style="display: none">UA-26408784-1</div>
+<div id="header" role="banner">
+  <h1>
+  <a id="logo" href="/"><img src="/static/0.5898/sites/link/images/logo.png" alt="Logo Springer" title="SpringerLink"/></a>
+</h1>
+
+  <span class="pillow-btn open-search" title="Open search">Search</span>
+  <span class="pillow-btn open-menu" title="Open menu">Menu</span>
+  <div class="panel-search">
+    <form id="global-search" class="big-search" action="/search" method="get" role="search">
+      <div class="search-field">
+        <input id="query" class="text" name="query" type="text" autocomplete="off" value="" placeholder="Search"/>
+      </div>
+      <input id="search" class="search-submit" type="submit" value="Go"/>
+      <div id="search-options" class="flyout">
+        <span class="pillow-btn open-search-options" title="Open search options">Search Options</span>
+        <div class="flyout-content">
+          <ul>
+            <li>
+              <a id="advanced-search-link" href="/advanced-search">Advanced Search</a>
+            </li>
+            <li>
+              <a id="search-help-link" href="/searchhelp">Search Help</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="panel-menu">
+    <div id="logo-company">
+    </div>
+    <ul id="global-nav" role="navigation">
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/contactus">Contact Us</a>
+      </li>
+      <li class="returnoldspringerlink">
+        <a href="http://www.springerlink.com/openurl.asp?id=doi%3A10.1007%2Fs12145-010-0061-4&amp;MUD=forcemp" title="Access the old version of SpringerLink (available for a limited time)">Access old SpringerLink</a>
+      </li>
+    </ul>
+    <div id="cross-nav">
+      <div id="auth" class="flyout">
+        <span class="flyout-caption">Sign up / Log in</span>
+        <div class="flyout-content">
+          <ul>
+            <li>
+              <a id="register-link" class="action" href="/signup-login?previousUrl=%2Farticle%2F10.1007%252Fs12145-010-0061-4">Sign up / Log in</a>
+              <a id="institutional-link" class="action" href="/institutional-login?previousUrl=%2Farticle%2F10.1007%252Fs12145-010-0061-4">Institutional / Athens login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="lang" class="flyout">
+        <span class="flyout-caption cur">English</span>
+        <div class="flyout-content">
+          <ul>
+            <li>
+              <a id="change-language-Deutsch" href="/language/Deutsch" rel="nofollow">Deutsch</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="edition" class="flyout">
+  <span class="flyout-caption cur">Academic edition</span>
+  <div class="flyout-content">
+    <ul>
+      <li>
+        <a class="edition-select" href="/siteEdition/rd" rel="nofollow">Corporate edition</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+    <div id="content">
+      <input id="autoShowLookInside" type="hidden" value="false"/>
+      
+      <div id="article" class="document no-access" itemscope="itemscope" itemtype="http://schema.org/ScholarlyArticle">
+        <div class="bar-dock">
+          <div class="bar-wrapper">
+            <div class="bar-actions">
+              <span class="action icon-view">
+                <a class="lookinside-href webtrekk-track pdf-link" href="/article/10.1007%2Fs12145-010-0061-4/lookinside/000.png" doi="10.1007/s12145-010-0061-4" parentContentType="Journal" contentType="Article" publication="12145 | Earth Science Informatics" viewType="Preview">Look Inside</a>
+              </span>
+              <span class="action icon-unlock">
+                <a class="access-link webtrekk-track" href="/accesspage/article/10.1007/s12145-010-0061-4?coverImageUrl=%2Fstatic-content%2F0.5898%2Fcovers%2Fjournals%2F833%2F12145.jpg" doi="10.1007/s12145-010-0061-4" parentContentType="Journal" contentType="Article" publication="12145 | Earth Science Informatics" viewType="Denial">Get Access</a>
+              </span>
+            </div>
+            <div class="unlock-wrapper">
+              <div class="bar-access-restr">
+                <strong class="message">Find out how to access preview-only content</strong>
+              </div>
+              <div id="get-access-content"></div>
+              <div class="bar-access-close">
+                <strong>Close</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="document-main layout-3">
+          <div class="col-main has-full-enumeration" role="main">
+            <div id="enumeration">
+      <div id="publication-title">
+        <a href="/journal/12145">Earth Science Informatics</a>
+      </div>
+      <span id="date" itemprop="datePublished">March 2011</span>, <span id="volume-range">Volume 4</span>, <a    id="issue-range" href="/journal/12145/4/1/page/1">Issue 1</a>, <span id="page-range">pp 29-44</span>
+    </div>
+
+            <h1 id="title" itemprop="headline">Airborne data processing and analysis software package</h1>
+            <div class="author-list">
+    <ul class="authors">
+        <li class="author" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+    <a href="/search?facet-author=%22David+J.+Delene%22" itemprop="name">David J. Delene</a>    </li>
+        <li class="show-all-hide-authors">
+          <span class="more-authors">&hellip;</span>
+          <span class="show-all-authors">show all 1</span>
+          <span class="hide-authors">hide</span>
+        </li>
+      </ul></div>
+
+            <div id="abstract-actions">
+              <span class="action icon-view">
+                <a class="lookinside-href webtrekk-track" href="/article/10.1007%2Fs12145-010-0061-4/lookinside/000.png" doi="10.1007/s12145-010-0061-4" parentContentType="Journal" contentType="Article" publication="12145 | Earth Science Informatics" viewType="Preview">Look Inside</a>
+              </span>
+              <span class="action icon-unlock">
+                <a class="webtrekk-track" href="/accesspage/article/10.1007/s12145-010-0061-4?coverImageUrl=%2Fstatic-content%2F0.5898%2Fcovers%2Fjournals%2F833%2F12145.jpg" doi="10.1007/s12145-010-0061-4" contentType="Article" parentContentType="Journal" viewType="Denial" publication="12145 | Earth Science Informatics">Get Access</a>
+              </span>
+            </div>
+            <h2 class="abstract-heading">Abstract</h2>
+            <div class="abstract-content formatted" itemprop="description">
+              
+                            
+                            <p class="a-plus-plus">The practice of conducting quality control and quality assurance in the construction of data sets is often an overlooked and underestimated task of many research projects in the Earth Sciences. The development of software to effectively process and quickly analyze measurements is a critical aspect of a research project. An evolutionary approach has been used at the University of North Dakota to develop and implement software to process and analyze airborne measurements. Development over the past eight years has resulted in a collection of software named the Airborne Data Processing and Analysis (ADPAA) package which has been published as an open source project on Source Forge. The ADPAA package is intended to fully automate data processing while incorporating the concept of missing value codes and levels of data processing. At each data level, ADPAA utilizes a standard ASCII file format to store measurements from individual instruments into separate files. After all data levels have been processed, a summary file containing parameters of scientific interest for the field project is created for each aircraft flight. All project information is organized into a standard directory structure. ADPAA contains several tools that facilitate quality control procedures conducted on instruments during field projects and laboratory testing. Each quality control procedure is designed to ensure proper instrument performance and hence the validity of the instrument’s measurement. Data processing by ADPAA allows edit files to be created that are automatically used to insert missing value codes into a time period that had instrument problems. The creation of edit files is typically done after the completion of a field project when scientists are performing quality assurance of the data set. Since data processing is automatic, preliminary data can be created and analyzed within hours of an aircraft flight and a complete field project data set can be reprocessed many times during the quality assurance process. Once a final data set has been created, ADPAA provides several tools for visualization and analysis. In addition to aircraft data, ADPAA can be used on any data set that is based on time series measurements. The concepts illustrated by ADPAA and components of ADPAA, such as the Cplot visualization tool, are applicable to areas of Earth Science that work with time series measurements.</p>
+                          
+            </div>
+            <div class="article-note">
+                          <div class="a-plus-plus simple-para">Communicated by: H.A. Babaie</div>
+                        </div>
+          </div>
+          <div class="col-aside" role="complementary">
+            <div class="cover">
+      <div class="look-inside cover-image-animate">
+        <div id="reader-overlay">
+      <div id="reader-page-template">
+        <div id="page-%P">
+          <div class="page-number">
+            Page
+            %P
+          </div>
+          <div class="pdf-page" id="page-img-container-%ID">
+            <img id="pdf-page-image-%ID" class="pdf-image" src="/static/0.5898/images/pdf-preview/spacer.gif" alt="Loading..." width="%W" style="width:%Wpx;" data-loaded="false"/>
+          </div>
+        </div>
+      </div>
+      <div class="reader-position">
+        <div id="reader">
+          <div id="reader-buttons">
+            <a href="#" id="pdf-close" class="btn btn-close right">
+              Close
+            </a>
+            <a href="#" id="toggletext" class="btn" title="Toggle plain text">
+              Plain text
+            </a>
+          </div>
+          <div id="viewer" class="show-pdf">
+            <div id="scroller"></div>
+          </div>
+          <div class="top-shadow"></div>
+          <div class="bottom-shadow"></div>
+        </div>
+      </div>
+    </div>
+
+        <a class="lookinside-href webtrekk-track" href="/article/10.1007%2Fs12145-010-0061-4/lookinside/000.png" parentContentType="Journal" contentType="Article" doi="10.1007/s12145-010-0061-4" viewType="Preview" publication="12145 | Earth Science Informatics">
+          <img class="look-inside-cover" src="/static-content/0.5898/covers/journals/833/12145.jpg" alt="Earth Science Informatics" width="153" itemprop="image"/>
+    <img class="look-inside-page" src="/static-content/0.5898/lookinside/687/art%253A10.1007%252Fs12145-010-0061-4/000.png" alt="Earth Science Informatics" width="153" itemprop="image"/>
+
+          <span class="look-inside-badge">
+            Look
+            <br/>
+            Inside
+          </span>
+        </a>
+      </div>
+    </div>
+
+            <div class="partner-logos">
+      <ul>
+      </ul>
+    </div>
+
+            <div class="other-actions share">
+      <h2>Share</h2>
+      <a id="facebook" href="javascript:void(0)" title="Share this content on Facebook">Share this content on Facebook</a>
+      <a id="twitter" href="javascript:void(0)" title="Share this content on Twitter">Share this content on Twitter</a>
+      <a id="linkedin" href="javascript:void(0)" title="Share this content on LinkedIn">Share this content on LinkedIn</a>
+    </div>
+
+            <div class="section-links">
+      <h2>Within this Article:</h2>
+      <ol>
+        <li>
+          Introduction
+        </li>
+        <li>
+          Design and Implementation
+        </li>
+        <li>
+          Results
+        </li>
+        <li>
+          Discussion
+        </li>
+        <li>
+          Conclusion
+        </li>
+        <li>
+          Availability and requirements
+        </li>
+        <li>
+          References
+        </li>
+        <li>
+          References
+        </li>
+      </ol>
+    </div>
+
+            <div class="other-actions">
+              <h2>Other actions</h2>
+    <ul>
+      <li>
+        <a id="export-citation" href="/export-citation/article/10.1007/s12145-010-0061-4">
+          Export citations
+        </a>
+      </li>
+      <li>
+        <a id="toc-alerting-link" class="external" href="http://www.springer.com/journal/12145/about">Register for Journal Updates</a>
+      </li>
+      <li>
+        <a id="about-link" class="external" href="http://www.springer.com/journal/12145/about">About This Journal</a>
+      </li>
+      <li>
+        <a id="permissions-link" class="external" href="https://s100.copyright.com/AppDispatchServlet?publisherName=Springer&amp;imprint=Springer-Verlag&amp;publication=1865-0473&amp;title=Airborne+data+processing+and+analysis+software+package&amp;publicationDate=2010&amp;author=David+J.+Delene&amp;AuthorEmail=delene%40aero.und.edu&amp;authorAddress=Clifford+Hall+420%2C+4149+University+Avenue%2C+Grand+Forks%2C+ND%2C+58202-9006%2C+USA&amp;contentID=10.1007%2Fs12145-010-0061-4&amp;volumeNum=4&amp;issueNum=1&amp;startPage=29&amp;endPage=44&amp;orderBeanReset=true&amp;orderSource=SpringerLink" target="_blank">Reprints and Permissions</a>
+      </li>
+    </ul>
+
+            </div>
+          </div>
+        </div>
+        <div class="document-aside" role="complementary">
+          <div id="abstract-related" class="hidden expander">
+      <div class="expander-title">
+        <div class="heading">
+          <h2>Related Content</h2>
+          <img class="hidden" src="/static/0.5898/sites/link/images/loading_expander.gif"/>
+        </div>
+      </div>
+      <div class="expander-content">
+        <div class="expander-content-inner">
+          <ol id="related-list"></ol>
+        </div>
+      </div>
+    </div>
+
+          <div id="abstract-esm" class="expander expander-empty">
+      <div class="expander-title">
+        <div class="heading">
+          <h2>Supplementary Material (0)</h2>
+        </div>
+      </div>
+    </div>
+
+          <div id="abstract-references" class="expander">
+      <div class="expander-title">
+        <div class="heading">
+          <h2>References (28)</h2>
+        </div>
+      </div>
+      <div class="expander-content">
+        <div class="expander-content-inner">
+          <div class="formatted">
+            <ol>
+              <li>
+                <span class="authors">Cplot (2010) Download ADPAA Files Now. <a class="a-plus-plus" href="https://sourceforge.net/projects/adpaa/files/">https://sourceforge.net/projects/adpaa/files/</a>. Accessed May 2010</span>
+              </li>
+              <li>
+                <span class="authors">Gaines SE, Hipskind RS (2009) Format Specification for Data Exchange. <a class="a-plus-plus" href="http://aerosol.atmos.und.edu/ADPAA/formatspec.txt">http://aerosol.atmos.und.edu/ADPAA/formatspec.txt</a>. Accessed July 2009</span>
+              </li>
+              <li>
+                <span class="authors">Gancarz M (2003) Linux and UNIX Philosophy, Digital Press, 12 Crosby Drive, Bedford, MA 01730, USA</span>
+              </li>
+              <li>
+                <span class="authors">General Public License (2009) GNU General Public License Version3, 29 June 2007. <a class="a-plus-plus" href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a>. Accessed August 2009</span>
+              </li>
+              <li>
+                <span class="authors">Healy M, Westmacott M (1956) Missing values in experiments analysed on automatic computer. J R Stat Soc, Ser C, Appl Stat 5(3):203–206</span>
+              </li>
+              <li>
+                <span class="authors">Heard DE (2006) Field measurements of atmospheric composition. In: Analytical techniques for atmospheric measurement. Blackwell Publishing, Oxford, UK</span>
+              </li>
+              <li>
+                <span class="authors">Holzwarth S, Freer M, Bachmann M, Wang X (2010) FP7-N6SP-DN6.2.1-List of Existing Data Pre-processing Software. <a class="a-plus-plus" href="http://www.eufar.net/search/doc/doc_pres.php?id_doc=4343&amp;all=1">http://www.eufar.net/search/doc/doc_pres.php?id_doc=4343&amp;all=1</a>. Accessed May 2010</span>
+              </li>
+              <li>
+                <span class="authors">Horton NJ, Lipsitz SR (2001) Multiple imputation in practice: comparison of software packages for regression models with missing variables. Am Stat 55(3):244–254</span>
+                <a class="external" href="http://dx.doi.org/10.1198/000313001317098266">CrossRef</a>
+              </li>
+              <li>
+                <span class="authors">Lee X, Massman W, Law B (2004) Post-field data quality control. In: Handbook of micrometeorology: a guide for surface flux measurement and analysis. Kluwer Academic Publishers, Dordrecht</span>
+              </li>
+              <li>
+                <span class="authors">Lerner J, Tirole J (2005) The scope of open source licensing. J Law Econ Organ 21(1):20–56. doi:<span class="a-plus-plus non-url-ref">10.1093/jleo/ewi002</span>
+                                </span>
+                <a class="external" href="http://dx.doi.org/10.1093/jleo/ewi002">CrossRef</a>
+              </li>
+              <li>
+                <span class="authors">Masked Arrays (2010) NumPy v1.5.dev8106 Manual (DRAFT). <a class="a-plus-plus" href="http://docs.scipy.org/doc/numpy/reference/maskedarray.html">http://docs.scipy.org/doc/numpy/reference/maskedarray.html</a>. Accessed May 2010</span>
+              </li>
+              <li>
+                <span class="authors">Matplotlib (2010) Python Plotting. <a class="a-plus-plus" href="http://matplotlib.sourceforge.net/">http://matplotlib.sourceforge.net/</a>. Accessed May 2010</span>
+              </li>
+              <li>
+                <span class="authors">Mayavi (2010) 3D Scientific Data Visualization and Plotting. <a class="a-plus-plus" href="http://code.enthought.com/projects/mayavi/">http://code.enthought.com/projects/mayavi/</a>. Accessed May 2010</span>
+              </li>
+              <li>
+                <span class="authors">Murray JJ, Nguyen LA, Daniels TS, Minnis P, Schaffner PR, Cagle MF, Nordeen ML, Wolff, CA, Anderson MV, Mulally DJ, Jensen KR, Grainger CA, Delene DJ (2005) Tropospheric Airborne Meteorological Data and Reporting (TAMDAR) icing sensor performance during the 2003/2004 Alliance Icing Research Study (AIRS II). 43rd AIAA Aerospace Sciences Meeting and Exhibit - Meeting Papers Pages 11935–11945</span>
+              </li>
+              <li>
+                <span class="authors">National Aeronautics and Space Administration (1986) Report of the EOS Data Panel, Vol IIa Earth Observing System Data and Information System. Technical Memorandum 87777, National Aeronautics and Space Administration (NASA), Washington, DC</span>
+              </li>
+              <li>
+                <span class="authors">Noble CA, Vanderpool RW, Peters TM, McElroy FF, Gemmill DB, Wiener RW (2001) Federal reference and equivalent methods for measuring fine particulate matter. Aerosol Sci Technol 34(5):457–464</span>
+              </li>
+              <li>
+                <span class="authors">NumPy (2010) Scientific Computing Tools for Python. <a class="a-plus-plus" href="http://numpy.scipy.org/">http://numpy.scipy.org/</a>. Accessed May 2010</span>
+              </li>
+              <li>
+                <span class="authors">Pinch T (1985) Towards an analysis of scientific observation: the externality and evidential significance of observational reports in physics. Soc Stud Sci 15(1):3–36</span>
+                <a class="external" href="http://dx.doi.org/10.1177/030631285015001001">CrossRef</a>
+              </li>
+              <li>
+                <span class="authors">Prenni AJ, Harrington JY, Tjernstom M, DeMott PJ, Avramov A, Long CN, Kreidenweis SM, Olsson PQ, Verlinde J (2007) Can ice-nucleating aerosols affect arctic seasonal climate? Bull Am Meteorol Soc 88(4):541–550. doi:<span class="a-plus-plus non-url-ref">10.1175/BAMS-88-4-541</span>
+                                </span>
+                <a class="external" href="http://dx.doi.org/10.1175/BAMS-88-4-541">CrossRef</a>
+              </li>
+              <li>
+                <span class="authors">Pressman RS (2005) Software testing techniques. In: Software engineering: a practitioner’s approach, 6th edn. McGraw Hill, New York, pp 389–428</span>
+              </li>
+              <li>
+                <span class="authors">Rpy (2010) Low-level Interface to R. <a class="a-plus-plus" href="http://rpy.sourceforge.net/rpy2.html">http://rpy.sourceforge.net/rpy2.html</a>. Accesed May 2010</span>
+              </li>
+              <li>
+                <span class="authors">Rubin DB (1976) Noniterative least squares estimates, standard errors and F-Tests for analyses of variance with missing data. J R Stat Soc B Methodol 38(3):270–274</span>
+              </li>
+              <li>
+                <span class="authors">Science Engineering Associates (2009) M300 Data Acquisition System. <a class="a-plus-plus" href="http://www.scieng.com/support/m300.htm">http://www.scieng.com/support/m300.htm</a>. Accessed December 2009</span>
+              </li>
+              <li>
+                <span class="authors">SciPy (2010) Open-source software for mathematics, science, and engineering. <a class="a-plus-plus" href="http://www.scipy.org/">http://www.scipy.org/</a>. Accessed May 2010</span>
+              </li>
+              <li>
+                <span class="authors">Simmhan YL, Plale B, Gannon D (2005) A survey of data provenance in e-science. SIGMOD Rec 34(3):31–36. <a class="a-plus-plus" href="http://doi.acm.org/10.1145/1084805.1084812">http://doi.acm.org/10.1145/1084805.1084812</a>
+                                </span>
+                <a class="external" href="http://dx.doi.org/10.1145/1084805.1084812">CrossRef</a>
+              </li>
+              <li>
+                <span class="authors">Source Forge (2009) Airborne Data Processing and Analysis. <a class="a-plus-plus" href="http://sourceforge.net/projects/adpaa/">http://sourceforge.net/projects/adpaa/</a>. Accessed July 2009</span>
+              </li>
+              <li>
+                <span class="authors">Subramanian GH, Gary K, Jiang JJ, Chien-Lung C (2009) Balancing four factors in system development projects. Commun ACM 52(10):118–121</span>
+                <a class="external" href="http://dx.doi.org/10.1145/1562764.1562794">CrossRef</a>
+              </li>
+              <li>
+                <span class="authors">Sukovich EM, Kingsmill DE, Yuter SE (2009) Variability of graupel and snow observed in tropical oceanic convection by aircraft during TRMM KWAJEX. J Appl Meteorol Climatol 48(2):185–198</span>
+                <a class="external" href="http://dx.doi.org/10.1175/2008JAMC1940.1">CrossRef</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+          <div id="abstract-about" class="expander expander-open">
+      <div class="expander-title">
+        <div class="heading">
+          <h2>About this Article</h2>
+        </div>
+      </div>
+      <div class="expander-content">
+        <div class="expander-content-inner">
+          <div class="summary">
+            <dl>
+              <dt>Title</dt>
+              <dd id="abstract-about-title">Airborne data processing and analysis software package</dd>
+              
+              <dt>Journal</dt>
+              <dd>
+                <a id="abstract-about-publication" href="/journal/12145">Earth Science Informatics</a>
+                <br/>
+                <a id="abstract-about-issue" href="/journal/12145/4/1/page/1">Volume 4, Issue 1 , pp 29-44</a>
+              </dd>
+              <dt id="dt-abstract-about-cover-date">Cover Date</dt><dd id="abstract-about-cover-date">2011-03-01</dd>
+              <dt>DOI</dt>
+              <dd id="abstract-about-doi" class="doi">10.1007/s12145-010-0061-4</dd>
+              <dt id="dt-abstract-about-issn">Print ISSN</dt>
+    <dd id="abstract-about-issn">1865-0473</dd>
+
+              <dt id="dt-abstract-about-electronic-issn">Online ISSN</dt>
+    <dd id="abstract-about-electronic-issn">1865-0481</dd>
+
+              <dt>Publisher</dt>
+              <dd id="abstract-about-publisher" itemprop="publisher">Springer-Verlag</dd>
+              <dt>Additional Links</dt>
+              <dd id="abstract-about-additional-links">
+      <ul>
+        <li>
+          <a class="external" href="http://www.springer.com/journal/12145/about">Register for Journal Updates</a>
+        </li>
+        <li>
+          <a class="external" href="http://www.springer.com/journal/12145/edboard">Editorial Board</a>
+        </li>
+        <li>
+          <a class="external" href="http://www.springer.com/journal/12145/about">About This Journal</a>
+        </li>
+        <li>
+          <a class="external" href="http://www.springer.com/journal/12145/submission">Manuscript Submission</a>
+        </li>
+      </ul>
+    </dd>
+
+            </dl>
+            <dl>
+      <dt>Topics</dt>
+    <dd itemprop="genre">
+      <ul class="abstract-about-subject">
+        <li>
+          <a href="/search?facet-subject=%22Earth+Sciences%2C+general%22">Earth Sciences, general</a>
+        </li>
+        <li>
+          <a href="/search?facet-subject=%22Computer+Applications+in+Earth+Sciences%22">Computer Applications in Earth Sciences</a>
+        </li>
+        <li>
+          <a href="/search?facet-subject=%22Simulation+and+Modeling%22">Simulation and Modeling</a>
+        </li>
+        <li>
+          <a href="/search?facet-subject=%22Information+Systems+Applications+%28incl.Internet%29%22">Information Systems Applications (incl.Internet)</a>
+        </li>
+        <li>
+          <a href="/search?facet-subject=%22Ontology%22">Ontology</a>
+        </li>
+      </ul>
+    </dd>
+
+      <dt>Keywords</dt>
+    <dd id="abstract-about-keywords" itemprop="keywords">
+      <ul class="abstract-keywords">
+        <li>Time series measurement</li>
+        <li>Open source scientific software</li>
+        <li>Airborne measurements</li>
+        <li>Research aircraft</li>
+      </ul>
+    </dd>
+
+      
+    </dl>
+    <dl>
+      
+      <dt>Authors</dt>
+    <dd>
+      <ul class="authors">
+        <li itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+          <a class="person" href="/search?facet-author=%22David+J.+Delene%22" itemprop="name">David J. Delene</a>
+          <a class="envelope" href="mailto:delene@aero.und.edu" title="delene@aero.und.edu"><img src="/static/0.5898/images/envelope.png" alt="delene@aero.und.edu"/></a>
+          <sup title="Department of Atmospheric Sciences, University of North Dakota">(1)</sup>
+        </li>
+      </ul>
+    </dd>
+    <dt>Author Affiliations</dt>
+    <dd>
+      <ul class="author-affiliations">
+        <li>
+          <span class="position">1.</span>
+          <span class="affiliation">
+            Department of Atmospheric Sciences, University of North Dakota, Clifford Hall 420, 4149 University Avenue, Grand Forks, ND, 58202-9006, USA
+            
+          </span>
+        </li>
+      </ul>
+    </dd>
+
+    </dl>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+        </div>
+      </div>
+    </div>
+    <div id="web-trekk-abstract" doi="10.1007/s12145-010-0061-4" parentContentType="Journal" contentType="Article" viewType="Abstract" publication="12145 | Earth Science Informatics"></div>
+
+
+    <div id="footer">
+  <hr/>
+  <div id="footer-verticals" class="section" role="navigation">
+    <span class="strapline">
+      <strong>6,720,588</strong>
+      scientific documents at your fingertips
+    </span>
+    <div class="flyout">
+      <h2 class="pillow-btn open-disciplines">
+        Browse by Discipline
+        <span class="caret"></span>
+      </h2>
+      <ol class="disciplines">
+  <li>
+    <a href="/search?facet-discipline=&quot;Biomedical+Sciences&quot;">
+      Biomedical Sciences
+    </a>
+  </li>
+  <li>
+    <a href="/search?facet-discipline=&quot;Business+%26+Management&quot;">
+      Business &amp; Management
+    </a>
+  </li>
+  <li>
+    <a href="/search?facet-discipline=&quot;Chemistry&quot;">
+      Chemistry
+    </a>
+  </li>
+  <li>
+    <a href="/search?facet-discipline=&quot;Computer+Science&quot;">
+      Computer Science
+    </a>
+  </li>
+  <li>
+    <a href="/search?facet-discipline=&quot;Earth+Sciences+and+Geography&quot;">
+      Earth Sciences and Geography
+    </a>
+  </li>
+  <li>
+    <a href="/search?facet-discipline=&quot;Economics&quot;">
+      Economics
+    </a>
+  </li>
+  <li>
+    <a href="/search?facet-discipline=&quot;Education+%26+Language&quot;">
+      Education &amp; Language
+    </a>
+  </li>
+  <li>
+    <a href="/search?facet-discipline=&quot;Energy&quot;">
+      Energy
+    </a>
+  </li>
+  <li>
+    <a href="/search?facet-discipline=&quot;Engineering&quot;">
+      Engineering
+    </a>
+  </li>
+  <li>
+    <a href="/search?facet-discipline=&quot;Environmental+Sciences&quot;">
+      Environmental Sciences
+    </a>
+  </li>
+  <li>
+    <a href="/search?facet-discipline=&quot;Food+Science+%26+Nutrition&quot;">
+      Food Science &amp; Nutrition
+    </a>
+  </li>
+  <li>
+    <a href="/search?facet-discipline=&quot;Law&quot;">
+      Law
+    </a>
+  </li>
+  <li>
+    <a href="/search?facet-discipline=&quot;Life+Sciences&quot;">
+      Life Sciences
+    </a>
+  </li>
+  <li>
+    <a href="/search?facet-discipline=&quot;Materials&quot;">
+      Materials
+    </a>
+  </li>
+  <li>
+    <a href="/search?facet-discipline=&quot;Mathematics&quot;">
+      Mathematics
+    </a>
+  </li>
+  <li>
+    <a href="/search?facet-discipline=&quot;Medicine&quot;">
+      Medicine
+    </a>
+  </li>
+  <li>
+    <a href="/search?facet-discipline=&quot;Physics&quot;">
+      Physics
+    </a>
+  </li>
+  <li>
+    <a href="/search?facet-discipline=&quot;Psychology&quot;">
+      Psychology
+    </a>
+  </li>
+  <li>
+    <a href="/search?facet-discipline=&quot;Public+Health&quot;">
+      Public Health
+    </a>
+  </li>
+  <li>
+    <a href="/search?facet-discipline=&quot;Social+Sciences&quot;">
+      Social Sciences
+    </a>
+  </li>
+  <li>
+    <a href="/search?facet-discipline=&quot;Statistics&quot;">
+      Statistics
+    </a>
+  </li>
+</ol>
+
+    </div>
+  </div>
+  <div id="footer-nav" class="section">
+    <div id="footer-nav-misc">
+      <div id="footer-our-content" class="block" role="navigation">
+        <h2>Our Content</h2>
+        <ul>
+          <li>
+            <a href="/search?facet-content-type=%22Journal%22">Journals</a>
+          </li>
+          <li>
+            <a href="/search?facet-content-type=%22Book%22">Books</a>
+          </li>
+          <li>
+            <a href="/search?facet-content-type=%22BookSeries%22">Book Series</a>
+          </li>
+          <li>
+            <a href="/search?facet-content-type=%22Protocol%22">Protocols</a>
+          </li>
+          <li>
+            <a href="/search?facet-content-type=%22ReferenceWork%22">Reference Works</a>
+          </li>
+        </ul>
+      </div>
+      <div id="footer-other-sites" class="block" role="navigation">
+        <h2>Other Sites</h2>
+        <ul>
+          <li>
+            <a href="http://www.springer.com/">Springer.com</a>
+          </li>
+          <li>
+            <a href="http://www.springerimages.com/">SpringerImages</a>
+          </li>
+          <li>
+            <a href="http://www.springerprotocols.com/">SpringerProtocols</a>
+          </li>
+          <li>
+            <a href="http://www.springermaterials.com/">SpringerMaterials</a>
+          </li>
+          <li>
+            <a href="http://www.springerreference.com/">SpringerReference</a>
+          </li>
+        </ul>
+      </div>
+      <div class="block" role="navigation">
+        <h2>Help &amp; Contacts</h2>
+        <ul>
+          <li>
+            <a class="contact-us-link" href="/contactus">Contact Us</a>
+          </li>
+          <li>
+            <a class="feedback-community-link" href="http://feedback.rd.springer.com/springer_rd">Feedback Community</a>
+          </li>
+          <li>
+            <a class="impressum-link" href="/impressum">Impressum</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="footer-legal" class="section" role="contentinfo">
+    <div id="mobile-nav">
+      <span class="pillow-btn open-legal" title="Show Legal Information">Legal</span>
+    </div>
+    <div id="legal" role="contentinfo">
+      <span id="footer-copyright">&copy; Springer, Part of Springer Science+Business Media</span>
+      <a id="footer-privacy" href="/termsandconditions">Privacy Policy, Disclaimer, General Terms &amp; Conditions</a>
+      <div id="diagnostic-info">
+  <span id="diagnostic-login-status">Not logged in</span>
+  <span class="diagnostic-business-partners">Unaffiliated</span>
+  <span id="diagnostic-ip">68.55.127.158</span>
+</div>
+
+      
+    </div>
+  </div>
+  <div id="footer-branding" class="section">
+    <div class="block">
+      <span id="branding-logo" title="Springer">Springer</span>
+      <span id="branding-qualifier" title="for Research &amp; Development">for Research &amp; Development</span>
+    </div>
+  </div>
+</div>
+
+<span class="keyboard-on"></span>
+
+  </div>
+  <noscript>
+  <div id="jsnotice" class="prompt-bar">
+    <p>JavaScript is currently disabled, this site works much better if you enable JavaScript in your browser</p>
+  </div>
+</noscript>
+<div id="redirect-prompt" class="prompt-bar hidden">
+  <div class="prompt-wrapper">
+    <p>You have been redirected to our new and improved site.</p>
+    <div class="prompt-actions">
+      <a class="more-info" href="#">More info</a>
+      <button id="i-am-good" type="submit" value="Im good, don't tell me again">I’m good, don’t tell me again</button>
+    </div>
+  </div>
+  <span id="cookie-domain" class="hidden">.springer.com</span>
+</div>
+
+<script src="/static/js/webtrekk/webtrekk_v3.js"></script>
+<script type="text/javascript">
+  var webtrekkProperties = {
+  trackDomain : "springergmbh01.webtrekk.net",
+  trackId : "935649882378213",
+  pageType : "rd_springer_com.journal.article_abstract"
+  };
+</script>
+<noscript>
+  <div id="webtrekk">
+    <img src="http://springergmbh01.webtrekk.net/935649882378213/wt?p=315,rd_springer_com.journal.article_abstract" height="1" width="1" alt=""/>
+  </div>
+</noscript>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script src="/static/0.5898/js/all.js"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    /* load MathML extension */
+    extensions: ["mml2jax.js"],
+
+    /* configure input and output */
+    jax: ["input/TeX", "input/MathML", "output/HTML-CSS"],
+
+    /* align display equations to the left */
+    displayAlign: "left",
+
+    /* set zoom trigger */
+    menuSettings: {
+      zoom: "Click"
+    },
+
+    /* configuration of the tex2jax preprocessor:
+       - set delimiters for inline and display equations
+       - preview while equations are processed is "TeX"
+       - allow \$ to represent a literal dollar sign
+     */
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      preview: ["TeX"],
+      processEscapes: true
+    },
+
+    /* configuration of the mml2jax preprocessor:
+       - preview while equations are processed is "MathML"
+     */
+    mml2jax: {
+      preview: ["MathML"]
+    },
+
+    /* configuration of the HTML-CSS output processor:
+       - available fonts are STIX and TeX
+       - preferred font is STIX
+       - use TeX as web-based font if none of the above is available on the user's computer
+       - use TeX font for image fallback mode
+    */
+    "HTML-CSS": {
+      availableFonts: ["STIX","TeX"],
+      preferredFont: ["STIX"],
+      webFont: ["TeX"],
+      imageFont: ["TeX"],
+      styles: {
+        '.MathJax_Display': {
+          "margin": 0
+        }
+      }
+    },
+
+    /* configuration of the math menu:
+       - allow the user to select what font to use
+    */
+    MathMenu: {
+      showFontMenu: true
+    }
+  });
+
+</script>
+<script src="http://rd.springer.com/mathjax/MathJax.js?config=TeX-AMS_HTML-full.js"></script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26408784-1']);
+  _gaq.push (['_gat._anonymizeIp']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' === document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script type="text/javascript">
+  (function(w, d) { var a = function() { var a = d.createElement('script'); a.type = 'text/javascript';
+  a.async = 'async'; a.src = '//' + ((w.location.protocol === 'https:') ? 's3.amazonaws.com/cdx-radar/' :
+  'radar.cedexis.com/') + '01-10448-radar10.min.js'; d.body.appendChild(a); };
+  if (w.addEventListener) { w.addEventListener('load', a, false); }
+  else if (w.attachEvent) { w.attachEvent('onload', a); }
+  }(window, document));
+</script>
+
+<div id="gimme-satisfaction"></div>
+
+</body>
+</html>

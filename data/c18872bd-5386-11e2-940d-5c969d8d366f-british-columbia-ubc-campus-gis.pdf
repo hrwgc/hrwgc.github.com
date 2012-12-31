@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+     
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>UBC Library EZproxy Service</title>
+
+<style type="text/css">
+<!--
+.login_status {
+
+    display: none;
+
+    padding: 5px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 8pt;
+    text-align: center;
+    padding: 5px;
+    color: red;
+    border: solid thin red;
+}
+.version_label {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 5pt;
+    color: gray;
+    text-align: right;
+}
+.footer {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 7pt;
+    color: #0000ff;
+    padding: 2px 0 0 0;
+}
+.header {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 13pt;
+    background-color: #002859; 
+    color: white;
+    letter-spacing: 2pt;
+    text-decoration: none;
+    padding: 3pt;
+}
+.small_header {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 13pt;
+    color: #dcdcdc;
+    text-decoration: none;
+    padding: 1pt;
+}
+.form_special {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 10pt;
+    letter-spacing: 1pt;
+    text-decoration: none;
+    color: red;
+}
+.form_label {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 9pt;
+}
+.form_message {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 8pt;
+}
+.form_large_message {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+}
+.form_rule {
+    color: #dcdcdc;
+    background-color: #dcdcdc;
+    height: 1px;
+    width: 60%;
+    border: none;
+    margin: 15px;
+}
+.new_for_students {
+    padding: 5px;
+    width: 60%;
+    color: red;
+    border: solid thin red;
+    border-width: medium;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 9pt;
+    text-align: center;
+}
+.clear {
+    height: 1px;
+    background-color: white;
+}
+.footer_line {
+    padding: 1px;  
+    background-color: #003399;
+}
+.centre{
+	text-align:center;
+}
+form{
+	width:auto;
+}
+.connector {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 11pt;
+    color: #708ea1;
+    text-decoration: none;
+}
+
+-->
+</style>
+
+</head>
+
+<body>
+
+<center>
+
+<form name="ezform" action="/login" method="post" onsubmit="this.pass.value=this.pass.value.toUpperCase();">
+<input type="hidden" name="url" value="http://abacus.library.ubc.ca/bitstream/10573/42448/1/OrthoPhotoIndexZones.pdf" />
+
+<table border="0" cellpadding="0" cellspacing="0" width="65%">
+<tr><td>&nbsp;</td></tr>
+<tr>
+  <td><a href="http://www.library.ubc.ca"><img style="border:none" alt="UBC Library Banner" src="https://login.ezproxy.library.ubc.ca:8443/ubc_library_banner.gif"/></a></td>
+</tr>
+<tr><td colspan="3" bgcolor="white"><div class="clear"></div>&nbsp;</td></tr>
+<!-- Login Box -->
+<tr>
+  <td class="centre">
+      <table border="0" align="center" cellspacing="0" cellpadding="4" bgcolor="#002859" width="75%">
+           <tr>
+	      <td align="center" colspan="3">
+                <div class="header">UBC Library EZproxy Service</div>
+              </td>
+           </tr>
+
+           <!-- Login Status Message -->
+
+           <tr>
+             <td colspan="3" bgcolor="#ffffff">
+
+<script type="text/javascript">
+
+// Set flag below to:
+//
+//  login    - regular login page     (file -> login.htm)
+//  loginbu  - regular error page     (file -> loginbu.htm)
+//  loginsu  - shibboleth error page  (file -> loginsu.htm)
+
+var flag="login";
+
+// Generate 'div' with style info
+if (flag == 'loginbu' || flag == 'loginsu') { document.write('<div style="padding: 5px;font-family: Verdana, Arial, Helvetica, sans-serif;font-weight: bold;font-size: 8pt;text-align: center;padding: 5px;color: red;border: solid thin red;">'); }
+
+// Regular Error Message
+if (flag == 'loginbu')   { document.write('ERROR:&nbsp;Your <i>Library Login</i> attempt has failed! Please check your barcode and PIN and try again!  <br/>For assistance, contact the UBC Library Help Desk at 604-822-6275 or library.systems@ubc.ca.'); }
+
+// Shibboleth Error Message
+if (flag == 'loginsu')    { document.write('ERROR:&nbsp;Your <i>CWL Login</i> attempt has failed! To login, you must have an active affiliation with UBC (faculty, staff, student, etc) and a valid UBC Campus Wide Login account.  Please try again!  <br/>For assistance, contact the UBC Library Help Desk at 604-822-6275 or library.systems@ubc.ca.'); }
+
+if (flag == 'loginbu' || flag == 'loginsu') { document.write('</div>'); }
+
+</script>
+
+             </td>
+           </tr>
+
+           <!-- Login Status Message -->
+                 
+           <tr>
+             <td colspan="3" bgcolor="white"><div class="clear">&nbsp;</div></td>
+           </tr>
+	      <tr>
+                <td width="45%" valign="top" bgcolor="#708ea1">
+                <table width="100%">
+                  <tr>
+                    <td align="center"><div class="small_header">Library Login</div></td>
+                  </tr>
+                </table>
+             </td>
+              <td width="10%" valign="top" bgcolor="white">&nbsp;</td>
+               <td width="45%" valign="top" bgcolor="#708ea1">
+               <table width="100%">
+                 <tr>
+                   <td align="center"><div class="small_header">CWL Login</div></td>
+                 </tr>
+               </table>
+               </td>
+             </tr>
+	     <tr>
+             <td colspan="3" bgcolor="white"><div class="clear"></div></td>
+           </tr>
+           <tr>
+             <td width="45%" valign="top" bgcolor="#bcc3c7">
+               <table border="0" bgcolor="#bcc3c7" width="100%" cellpadding="6">
+	         <tr>
+    	           <td align="center" colspan="2">
+		     <div class="form_large_message">To login using your <a href="https://ilsauth.library.ubc.ca/login/help.php" target="_blank">UBC Library</a> credentials, enter your barcode and PIN and then click the <b>Library Login</b> button below.</div><br/><div class="form_message">To logout, simply close your browser.</div>
+	           </td>
+                 </tr>
+                 <tr>
+                   <td align="center">
+		     <table border="0" bgcolor="#dcdcdc" cellpadding="3">
+		       <tr>
+		         <td align="right"><div class="form_label">Barcode:&nbsp;</div></td>
+			 <td align="left"><input type="text" name="user" value="29424" /></td>
+		       </tr>
+   	               <tr>
+		         <td align="right"><div class="form_label">PIN:&nbsp;</div></td>
+		         <td align="left"><input type="password" name="pass" value="" /></td>
+  		       </tr>
+		       <tr>
+                         <td colspan="2"><div class="form_message" align="center"><a href="http://ils.library.ubc.ca/reports/forgot_pin.pl?start" target="_blank">Forgot Your PIN?</a></div></td>
+                       </tr>
+ 	             </table>
+                   </td>
+                 </tr>
+                 <tr>
+                   <td align="center" colspan="2" >
+                          <div class="form_message"><b>Please note</b>, if you need to change your Library PIN, it may take up to 20 minutes for this change to be available for EZproxy login.  Please wait and try again later before seeking assistance!</div>
+                   </td>
+                 </tr>
+               </table>
+             </td>
+
+             <td width="10%" valign="middle" align="center" bgcolor="white"><div class="connector">&nbsp;OR&nbsp;</div></td>
+             <td width="45%" valign="top" bgcolor="#bcc3c7">
+                    <table border="0" width="100%" cellpadding="6">
+                           <tr>
+                             <td align="center" colspan="2">
+                                <div class="form_large_message">To login using your <a href="http://www.it.ubc.ca/cwl/about.shtml">UBC CWL</a> credentials,  click the <b>CWL Login</b> button below.</div><br/><div class="form_message">To logout, simply close your browser.</div>
+                                <div class="form_message">
+
+                                <hr class="form_rule" />
+For assistance with EZproxy, please contact the <b>UBC Library Help Desk</b> at <em>604-822-6275</em> or <em>library.systems@ubc.ca</em><br/><br/>
+For further information on UBC's Campus-Wide Login (CWL) system, please consult <a href="http://www.cwl.ubc.ca">www.cwl.ubc.ca</a>.</div>
+                             </td>
+                           </tr>
+                    </table>
+             </td>
+           </tr>
+           <tr>
+             <td bgcolor="#ffffff" colspan="3"><div class="clear"></div></td>
+           </tr>
+           <tr>
+             <td width="45%" valign="top" bgcolor="#708ea1">
+               <table width="100%">
+                 <tr>
+                   <td align="center"><input type="submit" style="background-color:#dcdcdc" name="loginType" value="Library Login"/></td>
+                 </tr>
+               </table>
+             </td>
+             <td width="10%" valign="top" bgcolor="white">&nbsp;</td>
+             <td width="45%" valign="top" bgcolor="#708ea1">
+               <table width="100%">
+                 <tr>
+                     <td align="center"><img alt="CWL Login Button" src="https://login.ezproxy.library.ubc.ca:8443/CWL_login_button.gif" onclick="window.location.href='/login?auth=shibboleth&amp;url=http://abacus.library.ubc.ca/bitstream/10573/42448/1/OrthoPhotoIndexZones.pdf'"/></td>
+                 </tr>
+               </table>
+             </td>
+           </tr>
+           <tr>
+             <td bgcolor="white" colspan="3"><div class="clear"></div></td>
+           </tr>
+       </table>
+  </td>
+</tr>
+<!-- Blue Line -->
+<tr>
+  <td><div class="footer_line"></div></td>
+</tr>
+<!-- Copyright -->
+<tr>
+  <td align="center">
+    <span class="footer" style="float:left">&copy;&nbsp;The&nbsp;University&nbsp;of&nbsp;British&nbsp;Columbia&nbsp;Library</span>
+    <span class="footer" style="float:right">Powered by UBC CWL and Shibboleth</span>
+   </td>
+</tr>
+
+</table>
+
+</form>
+
+</center>
+
+<!-- End Main table -->
+</body>
+</html>
