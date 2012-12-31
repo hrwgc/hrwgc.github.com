@@ -162,7 +162,7 @@ for notefile in files:
 	{% \include JB/setup %}
 	""" % (record['uid'], record['page_title'], record['created'], record['page_url'], record['pdf_urls'], record['local_pdf'], record['filename'], record['category'], record['keywords'])
 	if len(re.sub(r'[\-]+', r'-', re.sub(r'^(.*)\.html', r'\1', re.sub(r'^\-*([^\-].*[^\-])\-*$',r'\1', re.sub(r'[ ]+', '-', title))))) > 0:
-		jekyll_file = post_path + record['created'] + '-' + re.sub(r'[\-]+', r'-', re.sub(r'^(.*)\.html', r'\1', re.sub(r'^\-*([^\-].*[^\-])\-*$',r'\1', re.sub(r'[ ]+', '-', title)))) + ".md"
+		jekyll = post_path + record['created'] + '-' + re.sub(r'[\-]+', r'-', re.sub(r'^(.*)\.html', r'\1', re.sub(r'^\-*([^\-].*[^\-])\-*$',r'\1', re.sub(r'[ ]+', '-', title)))) + ".md"
 	else: 
 		jekyll = post_path + record['uid'] + '.md'
    	jekyll_file = open( "%s", "w") % (jekyll)
