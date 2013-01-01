@@ -1,0 +1,287 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--[if lt IE 7]>
+<script type="text/javascript" src="/themes/pdfcreator/js/checkie6.js"></script>   
+<script type="text/javascript">
+checkCookie();
+</script>
+   <![endif]-->
+
+   <meta name="description" content="Free PDF Creator - download the latest version of PDFCreator" />
+   <meta name="keywords" content="PDF, Download, Converter, Free, PDFCreator" />   
+   <meta property="og:title" content="" /> 
+  <meta property="og:type" content="" /> 
+  <meta property="og:site_name" content="pdfforge" /> 
+  <meta property="og:image" content="" /> 
+      <meta property="og:description" content="" />
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/misc/favicon.ico" type="image/x-icon" />
+<meta property="og:title" content="PDFCreator - The free PDF Creator and Converter" />
+<meta name="description" content="Free PDF Creator - download the latest version of PDFCreator" />
+<meta property="og:description" content="PDFCreator Features Security Disallow printing and modifications on your documents Protect your documents with a password Encrypt your files with AES and up to 128 Bit" />
+<meta name="abstract" content="Free PDF Creator - download the latest version of PDFCreator" />
+<meta name="keywords" content="PDF,Download,Converter,Free,PDFCreator" />
+<link rel="canonical" href="http://www.pdfforge.org/pdfcreator" />
+<meta property="og:url" content="http://www.pdfforge.org/pdfcreator" />
+<meta name="revisit-after" content="1 day" />
+<script type="text/javascript" src="https://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+<meta property="og:title" content="PDFCreator - The free PDF Creator and Converter" />
+<meta name="description" content="Free PDF Creator - download the latest version of PDFCreator" />
+<meta property="og:description" content="PDFCreator Features Security Disallow printing and modifications on your documents Protect your documents with a password Encrypt your files with AES and up to 128 Bit" />
+<meta name="abstract" content="Free PDF Creator - download the latest version of PDFCreator" />
+<meta name="keywords" content="PDF,Download,Converter,Free,PDFCreator" />
+<link rel="canonical" href="http://www.pdfforge.org/pdfcreator" />
+<meta property="og:url" content="http://www.pdfforge.org/pdfcreator" />
+<meta name="revisit-after" content="1 day" />
+    <title>PDFCreator - The free PDF Creator and Converter | pdfforge.org</title>
+    <style type="text/css">
+@font-face {
+	font-family: 'KabelLTStd-Book';
+	src: url('/themes/pdfcreator/fonts/kabelltstd-book-webfont.eot');
+    src: url('/themes/pdfcreator/fonts/kabelltstd-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/themes/pdfcreator/fonts/kabelltstd-book-webfont.woff') format('woff'),
+         url('/themes/pdfcreator/fonts/kabelltstd-book-webfont.ttf') format('truetype'),
+         url('/themes/pdfcreator/fonts/kabelltstd-book-webfont.svg#') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}    
+    </style>
+    <link type="text/css" rel="stylesheet" media="all" href="http://www.pdfforge.org/files/css/css_fe4dea3d04c8466563751aace0c291ec.css" />
+    <!--[if lte IE 7]> <link type="text/css" rel="stylesheet" media="all" href="/themes/pdfcreator/styles/ie.css"></link> <![endif]-->
+    <script type="text/javascript" src="http://www.pdfforge.org/files/js/js_76271f64c884329905a49e1f41f8ee92.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","nice_menus_options":{"delay":800,"speed":1}});
+//--><!]]>
+</script>
+
+  </head>
+  <body class="not-front not-logged-in page-node node-type-page no-sidebars i18n-en">
+    
+<div class="maincontainer">
+         <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="row">
+          <div class="span8" >
+              <div class="logo_container">
+         <div id="hover_slogan">
+                <a href="/" class="hover"></a>
+            </div>
+              </div>
+        </div>
+        <div class="span8">
+            <div style="position: relative; z-index:12">
+            <div class="languageswitch"><a href="http://www.pdfforge.org/pdfcreator" class="label active">en</a>&nbsp;<a href="http://de.pdfforge.org/pdfcreator" class="label">de</a>&nbsp;<a href="http://fr.pdfforge.org/pdfcreator" class="label">fr</a></div>                        <div id="menu2">
+                <div class="relative">
+			  <a href="/user" title="pdfforge login" id="dd2" class="login-dropdown" rel="dropdown2" style="width:170px;text-decoration:none;"><span>LOGIN</span></a>
+			  <div id="login-dropdown2" class="login-dropdown-menu">
+			 <form action="/pdfcreator"  accept-charset="UTF-8" method="post" id="user-login">
+<div><div class="form-item" id="edit-name-1-wrapper">
+ <label for="edit-name-1">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name-1" size="60" value="" class="form-text required" />
+ <div class="description">Enter your pdfforge.org username.</div>
+</div>
+<div class="form-item" id="edit-pass-1-wrapper">
+ <label for="edit-pass-1">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass-1"  maxlength="128"  size="60"  class="form-text required" />
+ <div class="description">Enter the password that accompanies your username.</div>
+</div>
+<input type="hidden" name="form_build_id" id="form-db4eec523dc285aeb066a4321a79dbe9" value="form-db4eec523dc285aeb066a4321a79dbe9"  />
+<input type="hidden" name="form_id" id="edit-user-login" value="user_login"  />
+<input type="submit" name="op" id="edit-submit-2" value="Log in"  class="form-submit" />
+
+</div></form>
+                           <div class="login_links"><a href="/user/register">register</a> &thinsp;|&thinsp; <a href="/user/password">lost passwort</a></div>			  </div>
+			</div>
+            </div>
+            
+
+            <div class="social">
+            <a href="http://www.facebook.com/pdfforge.pdfcreator" class="social_icon facebook"></a>
+            <a href="https://plus.google.com/b/103915188262986480421/103915188262986480421" class="social_icon google_plus"></a>
+            <a href="/blog/rss" class="social_icon rss"></a>
+			
+            </div>
+            </div>
+            <br />
+            <div id="search_2" class="container-inline">
+              <form style="width:100%" action="http://www.pdfforge.org/search/" accept-charset="UTF-8" method="post" id="search-form" class="search-form">
+                <div class="input-append">
+                  <input placeholder="search" type="text" name="keys" id="edit-keys" value="" class="form-text span3">
+                  <button type="submit" class="btn" id="submit"><i class="icon-search"></i></button>
+                </div>
+              </form>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="main_content_area">
+    <div class="container" >
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+            <div id="block-nice_menus-1" class="block block-nice_menus">
+
+  <div class="content">
+    <ul class="nice-menu nice-menu-down" id="nice-menu-1"><li class="menu-813 menuparent menu-path-front first  odd "><a href="http://www.pdfforge.org/" title="PDFCreator">pdfcreator</a><ul><li style="" class="menu-933 menu-path-pdfarchitectorg first  odd "><a href="http://www.pdfarchitect.org" title="">pdfarchitect</a></li>
+<li style="border-top:1px solid #444;" class="menu-820 menu-path-node-8279 odd "><a href="http://www.pdfforge.org/about" title="">About pdfforge</a></li>
+<li style="" class="menu-816 menu-path-node-8278 even  last "><a href="http://www.pdfforge.org/community" title="pdfforge Community page">Community</a></li>
+</ul>
+</li>
+<li style="" class="menu-240 menu-path-node-4 even "><a href="http://www.pdfforge.org/download" title="Download">download</a></li>
+<li class="menu-249 menuparent menu-path-node-5 odd "><a href="http://www.pdfforge.org/support" title="Support on PDFCreator">support</a><ul><li style="" class="menu-849 menu-path-forumspdfforgeorg first  odd "><a href="http://forums.pdfforge.org" title="Support Forum">Forum</a></li>
+<li style="" class="menu-852 menu-path-node-3009 even "><a href="http://www.pdfforge.org/content/frequently-asked-questions-faq" title="Frequently Asked Questions">FAQ</a></li>
+<li style="" class="menu-882 menu-path-node-7 odd  last "><a href="http://www.pdfforge.org/content/pdfcreator-user-manual" title="User Manual">User Manual</a></li>
+</ul>
+</li>
+<li style="" class="menu-610 menu-path-blog even  last "><a href="http://www.pdfforge.org/blog" title="Blog">blog</a></li>
+</ul>
+  </div>
+</div>
+            <!--
+            <ul class="nav">
+         <li class="dropdown active first" data-dropdown="dropdown">
+          <a  href="#" class="active dropdown-toggle">pdfcreator</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Secondary link</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li></li>
+          </ul>
+        </li>
+        <li><a href="#">download</a></li>
+        <li><a href="#">support</a></li>
+        <li class="last"><a href="#" >news</a></li>
+            </ul>
+            -->
+        </div>
+      </div>
+    </div>
+      
+      <!-- Example row of columns -->
+      <div class="row" >
+        <div class="span12 main_content_div">
+        
+        
+        
+                  <div class="clearfix"></div>
+        		            <div class="node">
+
+  
+    <div class="info"></div>
+  <div class="content">
+      
+  <div class="row">
+<div class=" span10">
+<h1 class="headline">PDFCreator Features</h1>
+</div>
+</div>
+<div class="row" style="color:#d00000; margin-bottom:12px;">
+<div class=" span10">
+<div class="textbox"><img style="float:right; margin:8px;" alt="" src="/images/base/save.png" />
+<h3>Security</h3>
+<ul class="feature_list">
+<li>Disallow printing and modifications on your documents</li>
+<li>Protect your documents with a password</li>
+<li>Encrypt your files with AES and up to 128 Bit</li>
+<li>Digitally sign your documents to verify you as author and protect the file against modifications</li>
+</ul>
+</div>
+<div class="featurebox"><img style="float:right; margin:8px;" alt="" src="/images/base/more.png" />
+<h3>Key Features:</h3>
+<ul class="feature_list">
+<li>Create PDF files from virtually any document</li>
+<li>Use different profiles to quickly switch your settings</li>
+<li>Control the size and quality of the resulting file</li>
+</ul>
+<h3>Professional Features:</h3>
+<ul class="feature_list">
+<li>Server mode provides a network PDF Server for your users</li>
+<li>Use the COM object to control PDFCreator from your application</li>
+<li>With auto save, you can create PDFs without user action</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="offset1 span8"><div class="downloadbox"><div class="downloadboxhead"><a href="http://download.pdfforge.org/download/pdfcreator/PDFCreator-stable" class=" btn download piwik_download">
+<p><img src="/images/base/main_download.png" class="download_icon" alt="download pdfcreator" /><br />
+<span class="download_heading">Download</span><br />
+<span class="download_note">Download PDFCreator 1.6.1</span></p>
+<p></p></a></div> <div class="downloadboxcontent"></div></div></div>
+  </div>
+
+</div>
+        </div>
+        <div class="span4">
+            <div style="position: relative"> 
+            <div style="" class="hide-on-phones">
+                                    <div id="banner">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4925186502893659";
+/* pdfforge */
+google_ad_slot = "7884214654";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+                    </div><!-- end banner -->
+                
+                </div>
+                </div>
+        </div>
+      </div>
+    </div></div>
+    <div class="footer">
+    <div class="container" >
+      <footer >
+          
+                       <div id="block-block-4" class="block block-block">
+
+  <div class="content">
+    <div class="row">
+              <div class="span12" style="text-align:center">
+                  &COPY; 2013 pdfforge <a href="/imprint">Imprint</a>              
+              </div>
+              
+          </div>  </div>
+</div>
+  
+                
+            </div>
+         </div>
+      </footer>
+    </div>
+ </div> 
+    </div>
+<!-- /container -->
+<!--[if lt IE 7 ]>
+   <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+   <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+<![endif]-->
+<!-- Piwik -->
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.pdfforge.org/" : "http://piwik.pdfforge.org/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://piwik.pdfforge.org/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+</body>
+</html>
