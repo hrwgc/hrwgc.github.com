@@ -1,0 +1,62 @@
+---
+uid: "e9e35819-53b5-11e2-995b-5c969d8d366f"
+title: "GISuser.com GIS Location Technology - Azavea Releases Source Code Enables Open Government Groups to Create Their Own Open Data Catalogs"
+created: "2012-03-12 12:25:35"
+page_url: "http://www.gisuser.com/"
+filename: "GISuser.com GIS Location Technology - Azavea Releases Source Code Enables Open Government Groups to Create Their Own Open Data Catalogs.html"
+tags: 
+ - GIS
+ - maps
+ - mapping
+ - geospatial
+ - arcgis
+ - esri
+ - autocad
+ - intergraph
+ - autodesk
+ - lbs
+ - webmap
+ - usgs
+ - rfp
+ - jobs
+ - usgs
+ - data
+ - gps
+ - lbs
+ - location-based
+ - mashup
+ - google earth
+ - geo
+ - mashup
+ - geek
+ - mobile
+ - dev
+ - developer
+ - gmaps
+ - social
+ - location
+ - Experts
+ - Glenn Letham
+ - Dev Feature - Getting Started With HTML5: 10 Getting Started with HTML5 Resources & Tools
+ - Experts
+ - Glenn Letham
+ - Social Media Tips  10 Fun Ways To Enhance Your Instagram Experience
+ - News
+ - Select Category
+ - Wanted
+ - hurricane project Volunteers to assess archived images
+ - Articles
+ - Emergency Response
+ - Hurricane Sandy Maps
+ - Mapping
+ - Emergency Response and Geospatial Data Resources
+ - Articles
+ - Articles from Spatial Media Authors
+ - LiDAR
+ - BIM
+ - and GIS Converge to Bring Business Efficiencies to Milwaukee Metropolitan Sewerage
+ - News
+ - Business
+ - 2013 International CES Shines Spotlight on Start-Ups
+ - Data
+---

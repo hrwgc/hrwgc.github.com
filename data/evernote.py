@@ -125,16 +125,16 @@ for notefile in files:
 		local_pdf = re.sub(r'[\-]+', r'-', re.sub(r'^(.*)\.html', r'\1', re.sub(r'^\-*([^\-].*[^\-])\-*$',r'\1', re.sub(r'[ ]+', '-', title))))
 		if re.match(r'.*\.resources/.*\.pdf', record['pdf_urls']) == None:
 			try: 
-				cmd = "wget -U 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.6 Safari/537.11' -O %s %s" % (pdf_path + unicode(record['uid'])  + '-' + local_pdf + '.pdf', record['pdf_urls'])
-				os.system(cmd)
+				# cmd = "wget -t 3 -U 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.6 Safari/537.11' -O %s %s" % (pdf_path + unicode(record['uid'])  + '-' + local_pdf + '.pdf', record['pdf_urls'])
+				# os.system(cmd)
 				record['local_pdf'] = pdf_path + unicode(record['uid'])  + '-' + local_pdf + '.pdf'
 				record['category'] = "pdf"
 			except:
 				record['keywords'] = record['keywords'] + ', \'Verify PDF Link\''
 		else:
 			try:
-				cmd = "mv \"%s\" \"%s\"" % (relpath + urllib.unquote(record['pdf_urls']), pdf_path + unicode(record['uid']) + '-' + local_pdf + '.pdf')
-				os.system(cmd)
+			#	cmd = "mv \"%s\" \"%s\"" % (relpath + urllib.unquote(record['pdf_urls']), pdf_path + unicode(record['uid']) + '-' + local_pdf + '.pdf')
+			#	os.system(cmd)
 				record['local_pdf'] = pdf_path + unicode(record['uid'])  + '-' + local_pdf + '.pdf'
 				record['category'] = "pdf"
 			except:
@@ -151,12 +151,13 @@ for notefile in files:
 		jekyll = str(post_path + unicode(record['uid']) + '.md')
 	#fin
 	cmd = "echo \'---\' >> \"%s\"" % (jekyll)
+	os.system(cmd)
 	if len(unicode(record['uid'])) > 0:
 		cmd = "echo \'uid: \"%s\"\' >> \"%s\"" % (unicode(record['uid']), jekyll)
 		os.system(cmd)
 
 	if len(record['page_title']) > 0:
-		cmd = "echo \'page_title: \"%s\"\' >> \"%s\"" % (re.sub(r'([\'\"])', r'', record['page_title']), jekyll)
+		cmd = "echo \'title: \"%s\"\' >> \"%s\"" % (re.sub(r'([\'\"])', r'', record['page_title']), jekyll)
 		os.system(cmd)
 
 	if len(record['created']) > 0:
@@ -184,6 +185,9 @@ for notefile in files:
 		os.system(cmd)
 
 	if len(record['keywords']) > 0:
-		cmd = "echo \'keywords: \"%s\"\' >> \"%s\"" % (re.sub(r'([\'\"])', '', record['keywords']), jekyll)
+		cmd = "echo \'tags: \' >> \"%s\"" % (jekyll)
+		os.system(cmd)
+		cmd = "echo '%s' >> \"%s\"" % (re.sub(',[ ]*',r'\n - ', re.sub(r'^,*', ' - ', re.sub(r'([\'\"])', '', record['keywords']))), jekyll)
 		os.system(cmd)
 	cmd = "echo \'---\' >> \"%s\"" % (jekyll)
+	os.system(cmd)
